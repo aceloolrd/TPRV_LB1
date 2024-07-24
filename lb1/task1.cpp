@@ -8,6 +8,7 @@ typedef unsigned long long ull;
 const ull iter = 1000000000;
 const int num_threads = std::thread::hardware_concurrency();
 std::mutex lock;
+
 ull one_thread_sum() {
     auto start = std::chrono::high_resolution_clock::now();
     ull sum = 0;
